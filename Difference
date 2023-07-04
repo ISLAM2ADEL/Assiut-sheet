@@ -1,0 +1,12 @@
+#include<iostream>
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std ;
+int main() {
+    ll A,B,C,D;
+    cin>>A>>B>>C>>D;
+    ll X;
+    X = (A*B)-(C*D);
+    cout<<"Difference = "<<X<<endl;
+    return 0;
+}
