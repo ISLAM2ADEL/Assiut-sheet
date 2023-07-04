@@ -1,0 +1,16 @@
+#include<iostream>
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std ;
+int main() {
+    ll x,y,z;
+    char a,b;
+    cin>>x>>a>>y>>b>>z;
+    if(a=='+')
+        x+y==z?cout<<"Yes":cout<<x+y;
+    else if(a=='-')
+        x-y==z?cout<<"Yes":cout<<x-y;
+    else if(a=='*')
+        x*y==z?cout<<"Yes":cout<<x*y;
+    return 0;
+}
