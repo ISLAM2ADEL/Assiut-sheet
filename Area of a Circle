@@ -1,0 +1,12 @@
+#include<iostream>
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std ;
+int main() {
+    const double pi = 3.141592653;
+    float x;
+    cin>>x;
+    cout<<fixed << setprecision(9)<<pi*x*x;
+// عشان نكتب تسع ارقام بعد العلامة العشرية
+    return 0;
+}
