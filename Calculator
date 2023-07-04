@@ -1,0 +1,18 @@
+#include<iostream>
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std ;
+int main() {
+    ll x,y;
+    char z;
+    cin>>x>>z>>y;
+    if(z=='+')
+        cout<<x+y<<endl;
+    else if(z=='-')
+        cout<<x-y<<endl;
+    else if(z=='*')
+        cout<<x*y<<endl;
+    else
+        cout<<x/y<<endl;
+    return 0;
+}
