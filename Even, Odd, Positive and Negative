@@ -1,0 +1,37 @@
+#include<iostream>
+#include<bits/stdc++.h>
+#include<cmath>
+#define ll long long
+using namespace std ;
+
+int main() {
+    int x,y,ev=0,od=0,pos=0,neg=0;
+    cin>>x;
+    for(int i=1;i<=x;i++){
+        cin>>y;
+        if(y>=0){
+            if(y==0)
+                ev++;
+            else if(y%2==0){
+                pos++;
+                ev++;
+            }
+            else if(y%2!=0){
+                pos++;
+                od++;
+            }
+        }
+        else{
+             if(y%2==0){
+                neg++;
+                ev++;
+            }
+            else if(y%2!=0){
+                neg++;
+                od++;
+            }
+        }
+    }
+    cout<<"Even: "<<ev<<endl<<"Odd: "<<od<<endl<<"Positive: "<<pos<<endl<<"Negative: "<<neg<<endl;
+    return 0;
+}
