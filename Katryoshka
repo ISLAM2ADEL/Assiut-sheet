@@ -1,0 +1,20 @@
+#include<iostream>
+#include<bits/stdc++.h>
+#include<cmath>
+#define ll long long
+using namespace std ;
+
+int main() {
+    /*
+    a eyes, b mouths and c bodies
+    1- Two eyes and one body.
+    2- Two eyes, one mouth, and one body.
+    3- One eye, one mouth, and one body.
+    */
+    ll a,b,c,d;
+    cin>>a>>b>>c;
+    d=min(a,min(b,c));
+    a-=d;b-=d;c-=d;
+    cout<<d+min(a/2,c);
+    return 0;
+}
