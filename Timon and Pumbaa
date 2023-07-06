@@ -1,0 +1,17 @@
+#include<iostream>
+#include<algorithm>
+#include<string.h>
+#include <cmath>
+#define ll long long
+using namespace std;
+
+int main()
+{
+    ll x,y;
+    cin>>x>>y;
+    if(x-y>=0)
+        cout<<x-y;
+    else
+        cout<<0;
+    return 0;
+}
