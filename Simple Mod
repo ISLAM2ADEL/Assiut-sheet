@@ -1,0 +1,14 @@
+#include<iostream>
+#include<algorithm>
+#include<string.h>
+#include <cmath>
+#define ll long long
+using namespace std;
+ 
+int main()
+{
+    ll N;
+    cin>>N;
+    cout<<"0 0"<<endl;
+    return 0;
+}
