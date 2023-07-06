@@ -1,0 +1,23 @@
+#include<iostream>
+#include<bits/stdc++.h>
+#include<cmath>
+#define ll long long
+using namespace std ;
+
+int main() {
+    ll x,s,pcount=0,lcount=1;
+    cin>>x;
+    for(int i=1;i<=x;i++){
+        if(i==1)
+            cout<<pcount<<" ";
+        else if(i==2)
+            cout<<lcount<<" ";
+        else{
+            cout<<lcount+pcount<<" ";
+            s=pcount;
+            pcount=lcount;
+            lcount=pcount+s;
+        }
+    }
+    return 0;
+}
