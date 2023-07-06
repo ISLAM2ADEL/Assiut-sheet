@@ -1,0 +1,18 @@
+#include<iostream>
+#include<bits/stdc++.h>
+#include<cmath>
+#define ll long long
+using namespace std ;
+
+int main() {
+    char x;
+    int z,y;
+    cin>>x>>y;
+    for(int i=0;i<y;i++){
+        cin>>z;
+        for(int j=0;j<z;j++)
+            cout<<x;
+        cout<<endl;
+    }
+    return 0;
+}
