@@ -1,0 +1,21 @@
+#include<iostream>
+#include<bits/stdc++.h>
+#include<cmath>
+#define ll long long
+using namespace std ;
+
+int main() {
+    ll x,y;
+    do{
+        cin>>x>>y;
+        int z=0;
+        if(x<=0 || y<=0)
+            break;
+        for(int i=min(x,y);i<=max(x,y);i++){
+            cout<<i<<" ";
+            z+=i;
+        }
+        cout<<"sum ="<<z<<endl;
+    }while(true);
+    return 0;
+}
