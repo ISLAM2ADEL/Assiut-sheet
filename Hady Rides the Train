@@ -1,0 +1,19 @@
+#include<iostream>
+#include<algorithm>
+#include<string.h>
+#include <cmath>
+#define ll long long
+using namespace std;
+
+int main()
+{
+    ll x,count=0;
+    cin>>x;
+    ll m=x;
+    m/=4;
+    if(m%2==0)
+        cout<<m<<" "<<x%4<<endl;
+    else
+        cout<<m<<" "<<abs(x%4-3)<<endl;
+    return 0;
+}
