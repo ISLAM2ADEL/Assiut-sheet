@@ -1,0 +1,39 @@
+#include<iostream>
+#include<algorithm>
+#include<string.h>
+#include <cmath>
+#define ll long long
+using namespace std;
+
+int main()
+{
+    ll a,b;
+    bool c=false;
+    cin>>a>>b;
+    char s[a+b+1];
+    cin>>s;
+    if(s[a]=='-'){
+        for(int i=0;i<a;i++){
+            if(int(s[i])-48>=0&&int(s[i])-48<=9)
+                c=true;
+            else{
+                c=false;
+                break;
+            }
+        }
+        if(c){
+        for(int j=a+1;j<a+b+1;j++)
+            if(int(s[j])-48>=0&&int(s[j])-48<=9)
+                c=true;
+            else{
+                c=false;
+                break;
+            }
+        }
+    }
+    if(c)
+        cout<<"Yes";
+    else
+        cout<<"No";
+    return 0;
+}
