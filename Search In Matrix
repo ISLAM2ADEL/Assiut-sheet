@@ -1,0 +1,25 @@
+#include<iostream>
+#include<algorithm>
+#include<string.h>
+#include <cmath>
+#define ll long long
+using namespace std;
+
+int main()
+{
+    ll t,r,y;
+    cin>>t>>r;
+    ll x[t][r];
+    for(int i=0;i<t;i++)
+        for(int j=0;j<r;j++)
+            cin>>x[i][j];
+    cin>>y;
+    for(int i=0;i<t;i++)
+        for(int j=0;j<r;j++)
+            if(y==x[i][j]){
+                cout<<"will not take number";
+                return 0;
+            }
+    cout<<"will take number";
+    return 0;
+}
