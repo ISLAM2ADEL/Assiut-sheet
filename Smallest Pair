@@ -1,0 +1,27 @@
+#include<iostream>
+#include<algorithm>
+#include<string.h>
+#include <cmath>
+#define ll long long
+using namespace std;
+
+int main()
+{
+    ll x,t;
+    cin>>t;
+    for(ll i=0;i<t;i++){
+        cin>>x;
+        ll y[x],min=999999999999;
+        for(ll j=0;j<x;j++){
+                cin>>y[j];
+        }
+        for(ll a=0;a<x;a++){
+            for(ll b=a+1;b<x;b++){
+                if(y[a]+y[b]+(b+1)-(a+1)<min)
+                    min=y[a]+y[b]+(b+1)-(a+1);
+            }
+        }
+        cout<<min<<endl;
+    }
+    return 0;
+}
