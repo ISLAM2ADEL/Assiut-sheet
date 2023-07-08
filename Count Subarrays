@@ -1,0 +1,31 @@
+#include<iostream>
+#include<algorithm>
+#include<string.h>
+#include <cmath>
+#define ll long long
+using namespace std;
+
+int main()
+{
+    int t,x;
+    cin>>t;
+    for(int i=0;i<t;i++){
+        cin>>x;
+        int y[x],n=0;
+        for(int j=0;j<x;j++)
+            cin>>y[j];
+        for(int j=0;j<x;j++){
+            for(int k=j+1;k<x;k++)
+                if(y[k]>y[j]){
+                    n++;
+                    int h=y[k];
+                    y[j]=y[k];
+                    y[k]=h;
+                }
+                else
+                    break;
+        }
+        cout<<x+n<<endl;
+    }
+    return 0;
+}
