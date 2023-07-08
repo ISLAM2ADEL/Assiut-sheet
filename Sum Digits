@@ -1,0 +1,19 @@
+#include<iostream>
+#include<algorithm>
+#include<string.h>
+#include <cmath>
+#define ll long long
+using namespace std;
+
+int main()
+{
+    ll x,m=0;
+    cin>>x;
+    char y[x];
+    for(int i=0;i<x;i++)
+        cin>>y[i];
+    for(int i=0;i<x;i++)
+        m=m+(int(y[i])-48);
+    cout<<m;
+    return 0;
+}
