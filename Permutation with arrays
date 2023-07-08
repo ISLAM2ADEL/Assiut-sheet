@@ -1,0 +1,29 @@
+#include<iostream>
+#include<algorithm>
+#include<string.h>
+#include <cmath>
+#define ll long long
+using namespace std;
+
+int main()
+{
+    ll t;
+    cin>>t;
+    ll x[t],y[t],m=t;
+    for(int i=0;i<t;i++){
+        cin>>x[i];
+    }
+    for(int i=0;i<t;i++){
+        cin>>y[i];
+    }
+    sort(x,x+t);
+    sort(y,y+t);
+    for(int i=0;i<t;i++){
+        if(x[i]!=y[i]){
+            cout<<"no";
+            return 0;
+        }
+    }
+    cout<<"yes";
+    return 0;
+}
