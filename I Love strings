@@ -1,0 +1,28 @@
+#include<iostream>
+#include<algorithm>
+#include<string>
+#include <cmath>
+#define ll long long
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    string x,y;
+    for(int i=0;i<t;i++){
+        ll n=0;
+        cin>>x>>y;
+        for(int j=0;j<min(x.size(),y.size());j++){
+            cout<<x[j]<<y[j];
+            n++;
+        }
+        if(n!=x.size())
+            cout<<x.substr(n);
+        else
+            cout<<y.substr(n);
+    cout<<endl;
+    }
+    return 0;
+
+}
