@@ -1,0 +1,25 @@
+#include<iostream>
+#include<algorithm>
+#include<string>
+#include <sstream>
+#include <cmath>
+#define ll long long
+using namespace std;
+
+int main()
+{
+    ll m=0;
+    string x;
+    getline(cin,x);
+    istringstream iss(x);
+    string word;
+    while (iss >> word) {
+        if(m!=0)
+            cout<<" ";
+        reverse(word.begin(),word.end());
+        cout << word;
+        m++;
+    }
+    return 0;
+
+}
